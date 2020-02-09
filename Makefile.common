@@ -1138,6 +1138,14 @@ ifeq ($(HAVE_SIXEL), 1)
    DEF_FLAGS += $(SIXEL_CFLAGS)
 endif
 
+ifeq ($(HAVE_NOTCURSES), 1)
+   DEFINES += -DHAVE_NOTCURSES
+   OBJ += gfx/drivers/notcurses_gfx.o gfx/drivers_font/notcurses_font.o \
+          gfx/drivers_context/notcurses_ctx.o
+   LIBS += $(NOTCURSES_LIBS)
+   DEF_FLAGS += $(NOTCURSES_CFLAGS)
+endif
+
 ifeq ($(HAVE_NETWORK_VIDEO), 1)
    ifneq ($(NETWORK_VIDEO_HOST),)
       DEFINES += -DNETWORK_VIDEO_HOST=$(NETWORK_VIDEO_HOST)

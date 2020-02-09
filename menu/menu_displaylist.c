@@ -815,6 +815,7 @@ static unsigned menu_displaylist_parse_system_info(file_list_t *list)
          {SUPPORTS_PYTHON      ,    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_PYTHON_SUPPORT},
          {SUPPORTS_V4L2        ,    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_V4L2_SUPPORT},
          {SUPPORTS_LIBUSB      ,    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_LIBUSB_SUPPORT},
+         {SUPPORTS_NOTCURSES   ,    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_NOTCURSES_SUPPORT},
       };
 
       feat_str[0] = '\0';

@@ -106,6 +106,7 @@ RetroArch can utilize these libraries if enabled:
 
    - nvidia-cg-toolkit
    - libfreetype2 (TTF font rendering on screen)
+   - notcurses (character graphics in terminal emulators / consoles)
 
 RetroArch needs at least one of these audio driver libraries:
 

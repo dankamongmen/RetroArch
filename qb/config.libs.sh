@@ -465,6 +465,7 @@ fi
 check_pkgconf DBUS dbus-1
 check_val '' UDEV "-ludev" '' libudev '' '' false
 check_val '' V4L2 -lv4l2 '' libv4l2 '' '' false
+check_val '' NOTCURSES -lnotcurses '' notcurses 1.1.6 '' false
 check_val '' FREETYPE -lfreetype freetype2 freetype2 '' '' false
 check_val '' X11 -lX11 '' x11 '' '' false
 

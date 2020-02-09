@@ -284,6 +284,12 @@
 #define SUPPORTS_MPV false
 #endif
 
+#ifdef HAVE_NOTCURSES
+#define SUPPORTS_NOTCURSES true
+#else
+#define SUPPORTS_NOTCURSES false
+#endif
+
 #ifdef HAVE_FREETYPE
 #define SUPPORTS_FREETYPE true
 #else
